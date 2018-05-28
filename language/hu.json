@@ -4,59 +4,59 @@
       "label": "Interaktív videó szerkesztő",
       "fields": [
         {
-          "label": "Feltöltés/beágyazás videó",
+          "label": "Videó feltöltés/beágyazás",
           "fields": [
             {
               "label": "Videó hozzáadása",
-              "description": "Click below to add a video you wish to use in your interactive video. You can add a video link or upload video files. It is possible to add several versions of the video with different qualities. To ensure maximum support in browsers at least add a version in webm and mp4 formats."
+              "description": "Kattints ide, az interaktív videóban felhasználni kívánt videó hozzáadásához. Hozzáadhatsz videó linket vagy feltölthetsz videó fájlokat. A videó különböző minőségű változatainak hozzáadása is lehetséges. A böngészők maximális támogatása érdekében legalább a webm és az mp4 formátumokat add hozzá."
             },
             {
-              "label": "Start screen options (unsupported for YouTube videos)",
+              "label": "Kezdőkép opciók (YouTube videók esetén nem támogatott)",
               "fields": [
                 {
-                  "label": "The title of this interactive video",
+                  "label": "Az interaktív videó címe",
                   "default": "Interaktív videó",
-                  "description": "Used in summaries, statistics etc."
+                  "description": "Használható az Összefoglalóban, Statisztikában, stb."
                 },
                 {
-                  "label": "Hide title on video start screen"
+                  "label": "Cím elrejtése a videó kezdőképen"
                 },
                 {
                   "label": "Rövid leírás (nem kötelező)",
-                  "description": "Optional. Display a short description text on the video start screen. Does not work for YouTube videos."
+                  "description": "Opcionális. Rövid leírást jelenít meg a kezdőképen. Nem működik YouTube videók esetén."
                 },
                 {
-                  "label": "Poster image",
-                  "description": "Image displayed before the user launches the video. Does not work for YouTube Videos."
+                  "label": "Poszter kép",
+                  "description": "A videó elindítása előtt látható kép. Nem működik YouTube videók esetén."
                 },
                 {
-                  "label": "Video copyright information",
-                  "description": "Information regarding copyright of the video and elements used in the video."
+                  "label": "Videó copyright információ",
+                  "description": "A videóval és a videó elemeivel kapcsolatos copyright információ."
                 }
               ]
             },
             {
-              "label": "Text tracks (unsupported for YouTube videos)",
+              "label": "Feliratok (Nem működik YouTube videók esetén)",
               "fields": [
                 {
-                  "label": "Available text tracks",
-                  "entity": "Track",
+                  "label": "Választható feliratok",
+                  "entity": "Felirat",
                   "field": {
-                    "label": "Track",
+                    "label": "Felirat",
                     "fields": [
                       {
-                        "label": "Track label",
-                        "description": "Used if you offer multiple tracks and the user has to choose a track. For instance 'Spanish subtitles' could be the label of a Spanish subtitle track.",
+                        "label": "Felirat cimke",
+                        "description": "Többféle felirat esetén kell használni, amikor a felhasználónak kell feliratot választani. Pl. 'English subtitles' lehet az angol feliratok címkéje.",
                         "default": "Feliratok"
                       },
                       {
-                        "label": "Type of text track",
+                        "label": "Felirat típusa",
                         "options": [
                           {
                             "label": "Feliratok"
                           },
                           {
-                            "label": "Captions"
+                            "label": "Képszöveg"
                           },
                           {
                             "label": "Leírás"
@@ -64,12 +64,12 @@
                         ]
                       },
                       {
-                        "label": "Source language, must be defined for subtitles",
+                        "label": "Forrás nyelv, amit meg kell határozni a feliratokhoz",
                         "default": "en",
-                        "description": "Must be a valid BCP 47 language tag. If 'Subtitles' is the type of text track selected, the source language of the track must be defined."
+                        "description": "Érvényes BCP 47 nyelv leíró. Ha 'Subtitles' a választott felirat típus, a felirat forrásnyelvét meg kell adni."
                       },
                       {
-                        "label": "Track source (WebVTT file)"
+                        "label": "Felirat forrása (WebVTT fájl)"
                       }
                     ]
                   }
@@ -79,26 +79,26 @@
           ]
         },
         {
-          "label": "Add interactions",
+          "label": "Interakciók hozzáadása",
           "fields": [
             {
               "field": {
                 "fields": [
                   {
-                    "label": "Display time"
+                    "label": "Idő kijelzés"
                   },
                   {
-                    "label": "Pause video"
+                    "label": "Szünet"
                   },
                   {
                     "label": "Megjelenítés mint",
-                    "description": "<b>Button</b> is a collapsed interaction the user must press to open. <b>Poster</b> is an expanded interaction displayed directly on top of the video",
+                    "description": "<b>Button</b> egy becsukott interakció, a felhasználónak gombnyomással kell kinyitnia. <b>Poszter</b> egy nyitott interakció, amit a videóban jeleznek ki",
                     "options": [
                       {
                         "label": "Button"
                       },
                       {
-                        "label": "Poster"
+                        "label": "Poszter"
                       }
                     ]
                   },
@@ -106,8 +106,8 @@
                     "label": "Turn into button on small screens"
                   },
                   {
-                    "label": "Label",
-                    "description": "Label displayed next to interaction icon."
+                    "label": "Cimke",
+                    "description": "Az interakció ikon melletti cimke."
                   },
                   {},
                   {},
@@ -116,60 +116,60 @@
                   {},
                   {},
                   {
-                    "label": "Adaptivity",
+                    "label": "Adaptivitás",
                     "fields": [
                       {
-                        "label": "Action on all correct",
+                        "label": "Esemény az összes helyes válasz esetén",
                         "fields": [
                           {
-                            "label": "Seek to",
-                            "description": "Enter timecode in the format M:SS"
+                            "label": "Ugrás",
+                            "description": "Irja be az időt M:SS formában"
                           },
                           {
-                            "label": "Allow the user to opt out and continue"
+                            "label": "Kilépés és folytatás engedélyezése a felhasználónak"
                           },
                           {
-                            "label": "Message"
+                            "label": "Üzenet"
                           },
                           {
-                            "label": "Label for seek button"
+                            "label": "Keresés gomb"
                           }
                         ]
                       },
                       {
-                        "label": "Action on wrong",
+                        "label": "Esemény helytelen válasz esetén",
                         "fields": [
                           {
-                            "label": "Seek to",
-                            "description": "Enter timecode in the format M:SS"
+                            "label": "Ugrás",
+                            "description": "Irja be az időt M:SS formában"
                           },
                           {
-                            "label": "Allow the user to opt out and continue"
+                            "label": "Kilépés és folytatás engedélyezése a felhasználónak"
                           },
                           {
-                            "label": "Message"
+                            "label": "Üzenet"
                           },
                           {
-                            "label": "Label for seek button"
+                            "label": "Keresés"
                           }
                         ]
                       },
                       {
-                        "label": "Require full score for task before proceeding",
-                        "description": "For best functionality this option should be used in conjunction with the \"Prevent skipping forward in a video\" option of Interactive Video."
+                        "label": "Továbblépéshez maximális pontszám szükséges",
+                        "description": "A hatékony működéshez ezt a funkciót a \"Videóban előreugrás tiltása\" opcióval együtt kell használni"
                       }
                     ]
                   },
                   {
-                    "label": "Visuals",
+                    "label": "Vizuális",
                     "fields": [
                       {
-                        "label": "Background color",
+                        "label": "Háttér szín",
                         "default": "rgb(255, 255, 255)"
                       },
                       {
-                        "label": "Box shadow",
-                        "description": "Adds a subtle shadow around the interaction. You might want to disable this for completely transparent interactions"
+                        "label": "Doboz árnyékoló kitöltés",
+                        "description": "Árnyékot ad az interakció köré. Teljesen átlátszó interakciók esetén nem ajánlott"
                       }
                     ]
                   },
